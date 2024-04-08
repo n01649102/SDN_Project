@@ -70,8 +70,9 @@ class SimpleSwitch13(app_manager.RyuApp):
 
             json.dump(topology_data, file)
 
-        self.logger.info("Topology info stored in file 'topology_data.json'"
-                         )
+        self.logger.info("Topology info stored in file 'topology_data.json'")
+        
+        subprocess.run('cat topology_data.json', shell=True)
 
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
@@ -207,11 +208,10 @@ class SimpleSwitch13(app_manager.RyuApp):
 
     subprocess.run('git branch -M main', shell=True)
 
-    subprocess.run('git remote add origin https://github.com/n01649102/SDN_Project.git'
-                   , shell=True)
+    subprocess.run('git remote add origin https://github.com/n01649102/SDN_Project.git', shell=True)
 
 # Add remote repository
-    subprocess.run('git remote set-url origin https://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@github.com/n01649102/SDN_Project', shell=True)
+    subprocess.run('git remote set-url origin https://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@github.com/n01649102/SDN_Project', shell=True)
 
 # Push changes to GitHub, forcing it
     subprocess.run('git push origin main --force', shell=True)
