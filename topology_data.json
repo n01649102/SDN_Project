@@ -1,1 +1,1 @@
-{"switches": [1, 4, 2, 3], "links": [{"src": 4, "dst": 3, "port": 2}, {"src": 2, "dst": 3, "port": 3}, {"src": 1, "dst": 2, "port": 2}, {"src": 3, "dst": 2, "port": 2}, {"src": 3, "dst": 4, "port": 3}, {"src": 2, "dst": 1, "port": 2}], "hosts": []}
+{"switches": [3, 4, 2, 1], "links": [{"src": 4, "dst": 3, "port": 2}, {"src": 3, "dst": 4, "port": 3}, {"src": 3, "dst": 2, "port": 2}, {"src": 1, "dst": 2, "port": 2}, {"src": 2, "dst": 1, "port": 2}, {"src": 2, "dst": 3, "port": 3}], "hosts": []}
